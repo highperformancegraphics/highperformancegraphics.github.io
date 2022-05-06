@@ -1,0 +1,43 @@
+<div id="navigation-menu-bar">
+  <nav>
+    <ul>
+      <li{% if page.url == "/2022/" or page.url == "/2022/index.html" %} class="navigation-menu-current"{% endif %}>
+	<a href="/2022/"><img src="/assets/images/2022/home.svg" width="24" height="24" alt="HOME" id="home" /></a>
+      </li>
+      <li{% if page.url contains "/2022/program" %} class="navigation-menu-current"{% endif %}>
+	<a href="/2022/program/">PROGRAM</a>
+      </li>
+      <li{% if page.url contains "/2022/call-for-participation" %} class="navigation-menu-current"{% endif %}>
+	<a href="/2022/call-for-participation/">CALL FOR PARTICIPATION</a>
+      </li>
+      <li{% if page.url contains "/2022/registration" %} class="navigation-menu-current"{% endif %}>
+	<a href="/2022/registration/">REGISTRATION</a>
+      </li>
+      <li{% if page.url contains "/2022/registration" %} class="navigation-menu-current"{% endif %}>
+	<a href="/2022/diversity-inclusion-program/">DIVERSITY &amp; INCLUSION</a>
+      </li>
+      <li {% if page.url contains "/2022/student-competition" %} class="navigation-menu-current"{% endif %}>
+	<a href="/2022/student-competition/">STUDENT COMPETITION</a>
+      </li>
+      <li{% if page.url contains "/2022/organization" or page.url contains "/2022/steering-committee" or page.url contains "/2022/web-archive" or page.url contains "/2022/support-the-conference" or page.url contains "/2022/contact-us" %} class="navigation-menu-current"{% endif %}>
+	<a href="/2022/organization/">ORGANIZATION</a>
+        <ul>
+  	  <li><a href="/2022/organization/">HPG 2022 COMMITTEE</a></li>
+  	  <li><a href="/2022/steering-committee/">STEERING COMMITTEE</a></li>
+  	  <li><a href="/2022/web-archive/">WEB ARCHIVE</a></li>
+  	  <li><a href="/2022/support-the-conference/">SUPPORT THE CONFERENCE</a></li>
+  	  <li><a href="/2022/contact-us/">CONTACT US</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+<script>
+  function toggleNavigationVisibility() {
+      let navMenu = document.getElementById("navigation-menu-bar").children[0].children[0];
+      for (let i = 0; i < navMenu.children.length; i++) {
+	  navMenu.children[i].classList.toggle("display-whole-navigation-menu");
+      }
+  }
+  document.getElementById("navigation-menu-bar").addEventListener("click", toggleNavigationVisibility, false);
+</script>
