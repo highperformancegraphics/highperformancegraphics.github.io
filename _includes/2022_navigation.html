@@ -1,32 +1,34 @@
 <div id="navigation-menu-bar">
   <nav>
     <ul>
-      <li{% if page.url == "/2022/" or page.url == "/2022/index.html" %} class="navigation-menu-current"{% endif %}>
-	<a href="/2022/"><img src="/assets/images/2022/home.svg" width="24" height="24" alt="HOME" id="home" /></a>
-      </li>
-      <li{% if page.url contains "/2022/program" %} class="navigation-menu-current"{% endif %}>
-	<a href="/2022/program/">PROGRAM</a>
-      </li>
-      <li{% if page.url contains "/2022/call-for-participation" %} class="navigation-menu-current"{% endif %}>
-	<a href="/2022/call-for-participation/">CALL FOR PARTICIPATION</a>
-      </li>
-      <li{% if page.url contains "/2022/registration" %} class="navigation-menu-current"{% endif %}>
-	<a href="/2022/registration/">REGISTRATION</a>
-      </li>
-      <li{% if page.url contains "/2022/registration" %} class="navigation-menu-current"{% endif %}>
-	<a href="/2022/diversity-inclusion-program/">DIVERSITY &amp; INCLUSION</a>
-      </li>
-      <li {% if page.url contains "/2022/student-competition" %} class="navigation-menu-current"{% endif %}>
-	<a href="/2022/student-competition/">STUDENT COMPETITION</a>
-      </li>
-      <li{% if page.url contains "/2022/organization" or page.url contains "/2022/steering-committee" or page.url contains "/2022/web-archive" or page.url contains "/2022/support-the-conference" or page.url contains "/2022/contact-us" %} class="navigation-menu-current"{% endif %}>
-	<a href="/2022/organization/">ORGANIZATION</a>
+      <li>
+        {% if page.url == "/2022/" or page.url == "/2022/index.html" or page.url == "/404.html" %}<span><img src="/assets/images/2022/home.svg" width="24" height="24" alt="HOME" id="home" /></span>{% endif %}
+        {% unless page.url == "/2022/" or page.url == "/2022/index.html" %}<a href="/2022/"><img src="/assets/images/2022/home.svg" width="24" height="24" alt="HOME" id="home" /></a>
+        {% endunless %}
+      </li><li>
+        {% if page.url contains "/2022/program" %}<span>PROGRAM</span>{% endif %}
+        {% unless page.url contains "/2022/program" %}<a href="/2022/program/">PROGRAM</a>{% endunless %}
+      </li><li>
+        {% if page.url contains "/2022/call-for-participation" %}<span>CALL FOR PARTICIPATION</span>{% endif %}
+        {% unless page.url contains "/2022/call-for-participation" %}<a href="/2022/call-for-participation/">CALL FOR PARTICIPATION</a>{% endunless %}
+      </li><li>
+        {% if page.url contains "/2022/registration" %}<span>REGISTRATION</span>{% endif %}
+        {% unless page.url contains "/2022/registration" %}<a href="/2022/registration/">REGISTRATION</a>{% endunless %}
+      </li><li>
+        {% if page.url contains "/2022/diversity-inclusion-program" %}<span>DIVERSITY &amp; INCLUSION</span>{% endif %}
+        {% unless page.url contains "/2022/diversity-inclusion-program" %}<a href="/2022/diversity-inclusion-program/">DIVERSITY &amp; INCLUSION</a>{% endunless %}
+      </li><li>
+        {% if page.url contains "/2022/student-competition" %}<span>STUDENT COMPETITION</span>{% endif %}
+        {% unless page.url contains "/2022/student-competition" %}<a href="/2022/student-competition/">STUDENT COMPETITION</a>{% endunless %}
+      </li><li>
+        {% if page.url contains "/2022/organization" or page.url contains "/2022/steering-committee" or page.url contains "/2022/web-archive" or page.url contains "/2022/support-the-conference" or page.url contains "/2022/contact-us" %}<span>ORGANIZATION</span>{% endif %}
+        {% unless page.url contains "/2022/organization" or page.url contains "/2022/steering-committee" or page.url contains "/2022/web-archive" or page.url contains "/2022/support-the-conference" or page.url contains "/2022/contact-us" %}<a href="/2022/organization/">ORGANIZATION</a>{% endunless %}   
         <ul>
-  	  <li><a href="/2022/organization/">HPG 2022 COMMITTEE</a></li>
-  	  <li><a href="/2022/steering-committee/">STEERING COMMITTEE</a></li>
-  	  <li><a href="/2022/web-archive/">WEB ARCHIVE</a></li>
-  	  <li><a href="/2022/support-the-conference/">SUPPORT THE CONFERENCE</a></li>
-  	  <li><a href="/2022/contact-us/">CONTACT US</a></li>
+          <li><a href="/2022/organization/">HPG 2022 COMMITTEE</a></li>
+          <li><a href="/2022/steering-committee/">STEERING COMMITTEE</a></li>
+          <li><a href="/2022/web-archive/">WEB ARCHIVE</a></li>
+          <li><a href="/2022/support-the-conference/">SUPPORT THE CONFERENCE</a></li>
+          <li><a href="/2022/contact-us/">CONTACT US</a></li>
         </ul>
       </li>
     </ul>
@@ -36,7 +38,7 @@
   function toggleNavigationVisibility() {
       let navMenu = document.getElementById("navigation-menu-bar").children[0].children[0];
       for (let i = 0; i < navMenu.children.length; i++) {
-	  navMenu.children[i].classList.toggle("display-whole-navigation-menu");
+          navMenu.children[i].classList.toggle("display-whole-navigation-menu");
       }
   }
   document.getElementById("navigation-menu-bar").addEventListener("click", toggleNavigationVisibility, false);
