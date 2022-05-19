@@ -3,7 +3,7 @@
     <ul>
       <li>
         {% if page.url == "/2022/" or page.url == "/2022/index.html" or page.url == "/404.html" %}<span><img src="/assets/images/2022/home.svg" width="24" height="24" alt="HOME" id="home" /></span>{% endif %}
-        {% unless page.url == "/2022/" or page.url == "/2022/index.html" %}<a href="/2022/"><img src="/assets/images/2022/home.svg" width="24" height="24" alt="HOME" id="home" /></a>
+        {% unless page.url == "/2022/" or page.url == "/2022/index.html" or page.url == "/404.html" %}<a href="/2022/"><img src="/assets/images/2022/home.svg" width="24" height="24" alt="HOME" id="home" /></a>
         {% endunless %}
       </li><li>
         {% if page.url contains "/2022/program" %}<span>PROGRAM</span>{% endif %}

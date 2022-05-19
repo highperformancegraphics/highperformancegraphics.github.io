@@ -7,29 +7,32 @@
     <meta name="keywords" content="{{ page.keywords }}" />
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap">
-    <link rel="stylesheet" href="/assets/css/2022_styles.css">
+    <link rel="stylesheet" href="/assets/css/2020_styles.css">
     <link rel="shortcut icon" type="image/png" href="{{ "/assets/images/2022/favicon-32.png" | absolute_url }}">
   </head>
   <body>
     <div id="scroll-top">^</div>
     <div id="outer-container">
       <div id="header-content">
-        <h1 id="site-title"><a href="https://www.highperformancegraphics.org/2022/">High Performance Graphics 2022</a></h1>
-        <h2 id="site-subtitle">July 11-14, hosted online</h2>
+        <h1 id="site-title"><a href="https://www.highperformancegraphics.org/2020/">High Performance Graphics 2020</a></h1>
+        <h2 id="site-subtitle">July 13-16, hosted online</h2>
       </div>
-      {% include 2022_navigation.html %}
-      <div id="banner-image"><img src="/assets/images/2022/hpg2022banner-1.jpg" width="1920" height="759" alt="High Performance Graphics 2022" /></div>
+      {% include 2020_navigation.html %}
+      <div id="banner-image"><img src="/assets/images/2020/HPG2020_banner2.jpg" width="2024" height="576" alt="High Performance Graphics 2020" /></div>
       <div id="content-wrapper">
         <div id="main-content">
           {{ content }}
         </div>
         <aside id="sponsors">
-	  {% include 2022_sponsors.html %}
+	  {% include 2020_sponsors.html %}
         </aside>
       </div>
       <div id="footer">
         <p>Follow us on <a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fwww.highperformancegraphics.org%2F&amp;ref_src=twsrc%5Etfw&amp;region=follow_link&amp;screen_name=HPG_Conf&amp;tw_p=followbutton">Twitter</a> <a href="https://www.youtube.com/channel/UCj04DHvbrUbuShWKzcTVJqg">YouTube</a> <a href="https://www.twitch.tv/highperformancegraphics">Twitch</a> and <a href="https://www.highperformancegraphics.org/2022/contact-us/#subscribe">sign-up for our mailing list</a>!</p>
-        <p>Header image from <strong>ReSTIR GI: Effective Path Resampling for Real-Time Path Tracing</strong>, HPG 2021,<br />by Yaobin Ouyang, Shiqiu Liu, Markus Kettunen, Matt Pharr, Jacopo Pantaleoni</p>
+	<p>Header image by Cem Yuksel, based on images from<br />
+	  <strong>Generalized Light Portals</strong>, Ogaki<br />
+	  <strong>Post-Render Warp with Late Input Sampling Improves Aiming Under High Latency Conditions</strong>, Kim et al.<br />
+	  <strong>Concurrent Binary Trees</strong>, Dupuy</p>
       </div>
     </div>
     <script>

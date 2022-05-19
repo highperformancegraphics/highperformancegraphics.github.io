@@ -1,0 +1,262 @@
+---
+layout: 2020
+title: High Performance Graphics 2020 &#8211; Program
+description: High Performance Graphics 2020 Program
+keywords: conference, program, graphics, performance, ray-tracing, raytracing, GPU
+---
+<h1>Program</h1>
+<p>We are pleased to announce the invited speaker program for <a href="https://www.highperformancegraphics.org/2020/"><b>High-Performance Graphics 2020</b></a>, which begins next Monday at 9:00am PDT.</p>
+<p>Our goal was to create a program that combines talks about the state-of-the-art in high-performance rendering, with talks about how advanced rendering systems are poised to enable new applications, such as enabling scene understanding, serving as a source of training data for machine learning, and enabling photorealistic, across-the-globe human interactions in AR/VR.</p>
+<p>HPG 2020 will be taking place online from July 13th to July 16th, with all talks streamed live to the public on <a href="https://www.twitch.tv/highperformancegraphics"><b>Twitch</b></a>. (Talks will also be recorded for later viewing on YouTube.)</p>
+<p>On MONDAY, JULY 13th, <a href="http://cwyman.org/"><b>Chris Wyman</b></a><b> of NVIDIA</b> will talk about how ray tracing algorithms are changing to achieve real-time path tracing on the GPU. <a href="https://www.linkedin.com/in/holger-gruen-b456791/"><b>Holger Gruen</b></a><b> of Intel</b> will discuss end-to-end system level challenges that arise when ray tracing complex, real-world game scenes.</p>
+<p>On TUESDAY, JULY 14th, <a href="http://www.cs.cmu.edu/~yaser/"><b>Yaser Sheikh</b></a><b> of Facebook Reality Labs</b> will describe how the latest human capture and real-time neural rendering techniques are poised to enable photorealistic 3D videoconferencing in AR/VR.</p>
+<p>On WEDNESDAY, JULY 15th, <a href="http://rgl.epfl.ch/people/wjakob"><b>Wenzel Jakob</b></a><b> of EPFL</b> will talk about the rapidly advanced field of differentiable rendering, which is enabling new applications of inverse rendering and scene understanding. <a href="https://pharr.org/matt/"><b>Matt Pharr</b></a><b> of NVIDIA</b> will be talking about his experiences porting PBRT to the GPU, while keeping much of the easy-to-understand C++ codebase completely intact!</p>
+<p>On THURSDAY, JULY 16th, <a href="https://msavva.github.io/"><b>Manolis Savva</b></a><b> of Simon Fraser University</b> will talk about how in the future, most rendered images will not be consumed by human eye balls, but by machine learning algorithms training intelligent agents, and why there is a need for rendering images at tens of thousands of frames per second!</p>
+<p>See our <a href="https://docs.google.com/document/d/11wubuhBwyG1F5hsBwT6uVQjLrWoTgvFd97Z_HIOimho/edit?ts=5f07972d"><b>Frequently Asked Questions</b></a> about how to view and participate in this year’s online HPG.</p>
+<h1><b>Full Program</b></h1>
+<p>All times are are given in US Pacific daylight time: UTC -7</p>
+<p><!--<a href="https://www.highperformancegraphics.org/papers20/HPG2020preprints.zip">Here</a> you can find a zip containing a bundle of all preprints.--></p>
+<h2>Monday, July 13</h2>
+<table>
+<tbody>
+<tr>
+<td>9:00-9:10</td>
+<td><strong>HPG 2020 Opening</strong></td>
+</tr>
+<tr>
+<td>9:10-10:10</td>
+<td><b>Keynote: Chris Wyman (Principal Research Scientist, NVIDIA)</b></p>
+<p><a href="/2020/program#reframing_light_transport_for_realtime"><b>Reframing Light Transport for Real-Time</b></a></p>
+<p><a href="https://highperformancegraphics.org/slides20/monday_wyman.pdf"><img src="/assets/images/2020/pdf.svg" alt="monday_wyman.pdf" width="20" /> slides</a></td>
+</tr>
+<tr>
+<td>10:10-10:25</td>
+<td><strong>Break</strong></td>
+</tr>
+<tr>
+<td>10:25-10:45</td>
+<td><a href="/2020/program#towards_fully_raytraced_games"><b>Towards Fully Ray-Traced Games: Addressing System-Level Challenges (Holger Gruen, Intel)</b></a></p>
+<p><a href="https://highperformancegraphics.org/slides20/monday_gruen.pdf"><img src="/assets/images/2020/pdf.svg" alt="monday_gruen.pdf" width="20" /> slides</a></td>
+</tr>
+<tr>
+<td>10:45-12:00</td>
+<td><b>Technical Papers: High-Performance Rendering</b></p>
+<ul>
+<li><a href="https://dl.acm.org/doi/10.1145/3406176">Generalized Light Portals</a><br />
+<i>Shinji Ogaki</i><br />
+<!--a href="/papers20/Generalized Light Portals.pdf"><img src="/assets/images/2020/pdf.svg" alt="Generalized Light Portals.pdf" width="20" /> preprint</a--></li>
+<li><a href="https://dl.acm.org/doi/abs/10.1145/3406184">Efficient Adaptive Deferred Shading with Hardware Scatter Tiles</a><br />
+<i>Ian Mallett, Cem Yuksel, Larry Seiler</i><br />
+<!--a href="/papers20/Efficient Adaptive Deferred Shading with Hardware Scatter Tiles.pdf"><img src="/assets/images/2020/pdf.svg" alt="Efficient Adaptive Deferred Shading with Hardware Scatter Tiles.pdf" width="20" /> preprint</a--></li>
+<li><a href="https://dl.acm.org/doi/10.1145/3406187">Post-Render Warp with Late Input Sampling Improves Aiming Under High Latency Conditions</a><br />
+<i>Joohwan Kim, Pyarelal Knowles, Josef Spjut, Ben Boudaoud, Morgan McGuire</i><br />
+<!--a href="/papers20/Post-Render Warp with Late Input Sampling Improves Aiming Under High Latency Conditions.pdf"><img src="/assets/images/2020/pdf.svg" alt="Post-Render Warp with Late Input Sampling Improves Aiming Under High Latency Conditions.pdf" width="20" /> preprint</a>, --></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h2><b>Tuesday, July 14<br />
+</b></h2>
+<table>
+<tbody>
+<tr>
+<td>9:00-10:00</td>
+<td><b>Keynote: Yaser Sheikh (Director, Facebook Reality Labs Pittsburgh)</b></p>
+<p><a href="/2020/program#photorealistic_telepresence"><b>Photorealistic Telepresence</b></a><br />
+<a href="https://highperformancegraphics.org/slides20/tues_sheikh.pdf"><img src="/assets/images/2020/pdf.svg" alt="tues_sheikh.pdf" width="20" /> slides</a></td>
+</tr>
+<tr>
+<td>10:00-10:15</td>
+<td><b>Break</b></td>
+</tr>
+<tr>
+<td>10:15-10:20</td>
+<td><b>Posters fast forward</b></td>
+</tr>
+<tr>
+<td>10:20-10:45</td>
+<td><b>Virtual social mixer for premium registrants (on Zoom)</b></td>
+</tr>
+<tr>
+<td>10:45-12:00</td>
+<td><b>Technical Papers: Image-Based Computing</b></p>
+<ul>
+<li><a href="https://dl.acm.org/doi/abs/10.1145/3406181">Neural Denoising for Path Tracing of Medical Volumetric Data</a><br />
+<i>Nikolai Hofmann, Jana Martschinke, Klaus Engel, Marc Stamminger</i></li>
+<li><a href="https://dl.acm.org/doi/10.1145/3406182">High-Performance Image Filters via Sparse Approximations</a><br />
+<i>Kersten Schuster, Philip Trettner, Leif Kobbelt</i><br />
+<!--a href="/papers20/High-Performance Image Filters via Sparse Approximations.pdf"><img src="/assets/images/2020/pdf.svg" alt="High-Performance Image Filters via Sparse Approximations.pdf" width="20" /> preprint</a--></li>
+<li><a href="https://dl.acm.org/doi/10.1145/3406183">FLIP: A Difference Evaluator for Alternating Images</a><br />
+<i>Pontus Andersson, Jim Nilsson, Tomas Akenine-Möller, Magnus Oskarsson, Kalle Åström, Mark D. Fairchild</i><br />
+<!--a href="/papers20/FLIP A Difference Evaluator for Alternating Images.pdf"><img src="/assets/images/2020/pdf.svg" alt="FLIP A Difference Evaluator for Alternating Images.pdf" width="20" /> preprint</a--></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>12:00-12:20</td>
+<td><b>Zoom Conversations with Poster Authors</b></p>
+<ul>
+<li>Evaluation of Graphics-based General Purpose Computation Solutions for Safety Critical Systems: An Avionics Case Study<br />
+<i>(Marc Benito, Matina Maria Trompouki, Leonidas Kosmidis, Juan David Garcia, Sergio Carretero, Ken Wenger)</i><br />
+<a href="/posters20/01_benito_SCS.pdf"><img src="/assets/images/2020/pdf.svg" alt="01_benito_SCS.pdf" width="20" /> poster</a>, <a href="/posters20/01_benito_SCS_abstract.pdf"><img src="/assets/images/2020/pdf.svg" alt="01_benito_SCS_abstract.pdf" width="20" />abstract</a><br />
+Poster Breakout Meeting: A</li>
+<li>Euclid NIR GPU: Embedded GPU-accelerated Near-Infrared Image Processing for On-board Space Systems.<br />
+<i>(Ivan Rodriguez, Leonidas Kosmidis)</i><br />
+<a href="/posters20/02_rodriguez_euclid_NIR.pdf"><img src="/assets/images/2020/pdf.svg" alt="02_rodriguez_euclid_NIR.pdf" width="20" /> poster</a>, <a href="/posters20/02_rodriguez_euclid_NIR_abstract.pdf"><img src="/assets/images/2020/pdf.svg" alt="02_rodriguez_euclid_NIR_abstract.pdf" width="20" />abstract</a><br />
+Poster Breakout Meeting: B</li>
+<li>Fast Eye-Adaptation for High Performance Mobile Applications. <i>(Morteza Mostajab, Theodor Mader)</i><br />
+<a href="/posters20/03_mostajab_fast_eye_adaptation.pdf"><img src="/assets/images/2020/pdf.svg" alt="03_mostajab_fast_eye_adaptation.pdf" width="20" /> poster</a>, <a href="/posters20/03_mostajab_fast_eye_adaptation_abstract.pdf"><img src="/assets/images/2020/pdf.svg" alt="03_mostajab_fast_eye_adaptation_abstract.pdf" width="20" />abstract</a><br />
+Poster Breakout Meeting: C</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h2><b>Wednesday, July 15<br />
+</b></h2>
+<table>
+<tbody>
+<tr>
+<td>9:00-10:00</td>
+<td><b>Keynote: Wenzel Jakob (Assistant Professor, EPFL)</b></p>
+<p><a href="/2020/program#differentiable_simulation_of_light"><b>Differentiable Simulation of Light: </b><b>Why it is Important, and What Makes it Hard!</b></a><br />
+<a href="https://highperformancegraphics.org/slides20/wed_jakob.pdf"><img src="/assets/images/2020/pdf.svg" alt="wed_jakob.pdf" width="20" /> slides</a></td>
+</tr>
+<tr>
+<td>10:00-10:15</td>
+<td><strong>Break</strong></td>
+</tr>
+<tr>
+<td>10:15-10:45</td>
+<td><b>Invited talk: Matt Pharr (Distinguished Research Scientist, NVIDIA)</b><br />
+<a href="/2020/program#porting_pbrt_to_the_gpu"><b>Porting PBRT to the GPU While Preserving its Soul</b></a><br />
+<a href="https://highperformancegraphics.org/slides20/wed_pharr.pdf"><img src="/assets/images/2020/pdf.svg" alt="wed_pharr.pdf" width="20" /> slides</a></td>
+</tr>
+<tr>
+<td>10:45-12:00</td>
+<td><b>Technical Papers: Rendering Thin or Transparent Objects</b></p>
+<ul>
+<li><a href="https://dl.acm.org/doi/abs/10.1145/3406178">Quadratic Approximation of Cubic Curves</a><br />
+<i>Nghia Truong, Cem Yuksel, Larry Seiler</i><br />
+<!--a href="/papers20/Quadratic Approximation of Cubic Curves.pdf"><img src="/assets/images/2020/pdf.svg" alt="Quadratic Approximation of Cubic Curves.pdf" width="20" /> preprint</a>, --></li>
+<li><a href="https://dl.acm.org/doi/abs/10.1145/3406179">Using Hardware Ray Transforms to Accelerate Ray/Primitive Intersections for Long, Thin Primitive Types</a><br />
+<i>Ingo Wald, Nathan Morrical, Stefan Zellmann, Lei Ma, Will Usher, Tiejun Huang, Valerio Pascucci</i><br />
+<!--a href="/papers20/Using Hardware Ray Transforms to Accelerate Ray-Primitive Intersections for Long, Thin Primitive Types.pdf"><img src="/assets/images/2020/pdf.svg" alt="Using Hardware Ray Transforms to Accelerate Ray-Primitive Intersections for Long, Thin Primitive Types.pdf" width="20" /> preprint</a--></li>
+<li><a href="https://dl.acm.org/doi/abs/10.1145/3406180">Sub-Triangle Opacity Masks for Faster Ray Tracing of Transparent Objects</a><br />
+<i>Holger Gruen, Carsten Benthin, Sven Woop</i><br />
+<!--a href="/papers20/Sub-Triangle Opacity Masks for Faster Ray Tracing of Transparent Objects.pdf"><img src="/assets/images/2020/pdf.svg" alt="Sub-Triangle Opacity Masks for Faster Ray Tracing of Transparent Objects.pdf" width="20" /> preprint</a--></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>12:00-12:20</td>
+<td><strong>Zoom Conversations with Poster Authors</strong></p>
+<ul>
+<li>Improved Triangle Encoding for Cached Adaptive Tessellation<br />
+<i>(Linus Horvàth, Bernhard Kerbl, Michael Wimmer)</i><br />
+<a href="/posters20/05_horvath_triangle_encoding.pdf"><img src="/assets/images/2020/pdf.svg" alt="05_horvath_triangle_encoding.pdf" width="20" /> poster</a>, <a href="/posters20/05_horvath_triangle_encoding_abstract.pdf"><img src="/assets/images/2020/pdf.svg" alt="05_horvath_triangle_encoding_abstract.pdf" width="20" />abstract</a><br />
+Poster Breakout Meeting: A</li>
+<li>Iterative GPU Occlusion Culling with BVH<br />
+<i>(Gi Beom Lee, Sungkil Lee)</i><br />
+<a href="/posters20/04_lee_iterative_occlusion_culling.pdf"><img src="/assets/images/2020/pdf.svg" alt="04_lee_iterative_occlusion_culling.pdf" width="20" /> poster</a>, <a href="/posters20/04_lee_iterative_occlusion_culling_abstract.pdf"><img src="/assets/images/2020/pdf.svg" alt="04_lee_iterative_occlusion_culling_abstract.pdf" width="20" />abstract</a><br />
+Poster Breakout Meeting: B</li>
+<li>Ray-casting inspired visualisation pipeline for multi-scale heterogeneous objects<br />
+<i>(Evgeniya Malikova)</i><br />
+<a href="/studcomp20/malikova/">student competition submission</a><br />
+Poster Breakout Meeting: C</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h2><b>Thursday, July 16<br />
+</b></h2>
+<table>
+<tbody>
+<tr>
+<td>8:00-9:00</td>
+<td><strong>HPG Town Hall (on Zoom only)<br />
+</strong></td>
+</tr>
+<tr>
+<td>9:00-9:10</td>
+<td><strong>Short Talks from HPG Sponsors</strong></td>
+</tr>
+<tr>
+<td>9:10-10:10</td>
+<td><strong>Keynote: Manolis Savva (Assistant Professor, Simon Fraser University)</strong><br />
+<a href="/2020/program#graphics_system_challenges_for_simulation"><strong>3D Graphics System Challenges for Simulation: </strong><strong>Lessons from AI Habitat</strong></a><br />
+<a href="https://highperformancegraphics.org/slides20/thur_savva.pdf"><img src="/assets/images/2020/pdf.svg" alt="thur_savva.pdf.pdf" width="20" /> slides</a></td>
+</tr>
+<tr>
+<td>10:10-10:25</td>
+<td><strong>Break</strong></td>
+</tr>
+<tr>
+<td>10:25-11:40</td>
+<td><b>Technical Papers: Hardware Architectures and Space Partitioning</b></p>
+<ul>
+<li><a href="https://dl.acm.org/doi/10.1145/3406177">Compacted CPU/GPU Data Compression via Modified Virtual Address Translation</a><br />
+<i>Larry Seiler, Daqi Lin, Cem Yuksel</i><br />
+<!--a href="/papers20/Compacted CPU-GPU Data Compression via Modified Virtual Address Translation.pdf"><img src="/assets/images/2020/pdf.svg" alt="Compacted CPU-GPU Data Compression via Modified Virtual Address Translation.pdf" width="20" /> preprint</a--></li>
+<li><a href="https://dl.acm.org/doi/10.1145/3406185">Hardware-Accelerated Dual-Split Trees</a><br />
+<i>Daqi Lin, Elena Vasiou, Cem Yuksel, Daniel Kopta, Erik Brunvand</i><br />
+<!--a href="/papers20/Hardware-Accelerated Dual-Split Trees.pdf"><img src="/assets/images/2020/pdf.svg" alt="Hardware-Accelerated Dual-Split Trees.pdf" width="20" /> preprint</a--></li>
+<li><a href="https://dl.acm.org/doi/10.1145/3406186">Concurrent Binary Trees (with application to longest edge bisection)</a><br />
+<i>Jonathan Dupuy</i></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>11:40-12:00</td>
+<td><strong>HPG Closing</strong> (Announcement of best paper and test of time award)</td>
+</tr>
+<tr>
+<td>12:00-TBD</td>
+<td><strong>After party for premium registrants (on Zoom)</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="reframing_light_transport_for_realtime"><b>Keynote: Chris Wyman (Principal Research Scientist, NVIDIA)<br />
+</b><b>Reframing Light Transport for Real-Time</b></h2>
+<p><a href="https://highperformancegraphics.org/slides20/monday_wyman.pdf"><img src="/assets/images/2020/pdf.svg" alt="monday_wyman.pdf" width="20" /> slides</a></p>
+<h3>Abstract</h3>
+<p>As real-time ray tracing becomes ubiquitous, researchers and engineers get to define its uses. We’re still early in adoption, with many applications relying on pre-existing ray tracing algorithms designed decades ago under wildly different system constraints. But ask yourself: would you use the same sorting or tree building algorithm on the CPU and the GPU? If not, why use the same lighting algorithms and data structures? The emergence of ray tracing hardware presents a tremendous opportunity for immediately impactful research defining how to efficiently ray and path trace under a streaming, parallel programming model. This talk briefly reviews important constraints of real-time rendering and presents existence proofs that reframing light transport for real-time is feasible. I also highlight key takeaways from our recent research on spatiotemporal importance resampling, which shows one concrete way to rethink lighting algorithms.</p>
+<h3>Bio</h3>
+<p>Chris Wyman is a Principal Research Scientist in NVIDIA’s real-time rendering research group, where he looks at a variety of problems ranging from lighting, shadowing, global illumination, BRDFs, sampling, filtering, denoising, antialiasing, and how to efficiently build GPU algorithms and data structures to solve these problems. Prior to NVIDIA, he was an Associate Professor at the University of Iowa and has a PhD from the University of Utah and a BS from the University of Minnesota.</p>
+<h2></h2>
+<h2 id="towards_fully_raytraced_games"><b>Towards Fully Ray-Traced Games: Addressing System-Level Challenges (Holger Gruen, Intel)</b></h2>
+<p><a href="https://highperformancegraphics.org/slides20/monday_gruen.pdf"><img src="/assets/images/2020/pdf.svg" alt="monday_gruen.pdf" width="20" /> slides</a></p>
+<h3>Abstract</h3>
+<p>Hardware accelerated real-time ray tracing can solve long standing problems in real-time rendering that have been challenging to address with rasterization-based approaches. However, real-time raytracing can be limited by practical scenarios in modern games, for example, complex dynamic content such as procedurally animated foliage or destructible scenes, highly detailed compressed or tessellated geometry, incoherent shading requests and large amounts of mid-traversal &#8220;shading&#8221; needed for alpha-textured geometry. We tackle the limitations of current programming models and hardware in these scenarios and discuss potential solutions for the future.</p>
+<h3>Bio</h3>
+<p>Holger Gruen ventured into 3D graphics over 27 years ago writing fast CPU software rasterizers. In the past he did work for middleware companies, games studios, a military simulation company and, for 13 years, in developer technology roles for GPU IHVs. He now works as a principal engineer in the XPU Technology and Research group at Intel.</p>
+<h2 id="photorealistic_telepresence"><b>Keynote: Yaser Sheikh (Director, Facebook Reality Labs Pittsburgh)<br />
+</b><b>Photorealistic Telepresence</b></h2>
+<p><a href="https://highperformancegraphics.org/slides20/tues_sheikh.pdf"><img src="/assets/images/2020/pdf.svg" alt="tues_sheikh.pdf" width="20" /> slides</a></p>
+<h3>Abstract</h3>
+<p>Telepresence has the potential to bring billions of people into artificial reality (AR/MR/VR). It is the next step in the evolution of telecommunication, from telegraphy to telephony to videoconferencing. In this talk, I will describe early steps taken at FRL Pittsburgh towards achieving photorealistic telepresence: realtime social interactions in AR/VR with avatars that look like you, move like you, and sound like you. If successful, photorealistic telepresence will motivate the concurrent development of the next generation of algorithms and computing platforms for computer vision and computer graphics. In particular, I will introduce codec avatars: the use of neural networks to unify the computer vision (inference) and computer graphics (rendering) problems in signal transmission and reception. The creation of codec avatars require capture systems of unprecedented 3D sensing resolution, which I will also describe.</p>
+<h3>Bio</h3>
+<p>Yaser Sheikh directs the Facebook Reality Lab in Pittsburgh, devoted to achieving photorealistic social interactions in augmented reality (AR) and virtual reality (VR). He is an associate professor (on leave) at the Robotics Institute, Carnegie Mellon University. His research broadly focuses on machine perception and rendering of social behavior, spanning sub-disciplines in computer vision, computer graphics, and machine learning. He is specifically interested in precisely measuring and modeling the full spectrum of social behavior. His research has been featured by various news and media outlets including The New York Times, BBC, CBS, WIRED, and The Verge. With colleagues and students, he has won the Hillman Fellowship (2004), Honda Initiation Award (2010), Popular Science’s &#8220;Best of What’s New&#8221; Award (2014), as well as several conference best paper and demo awards.</p>
+<h2 id="differentiable_simulation_of_light"><b>Keynote: Wenzel Jakob (Assistant Professor, EPFL)<br />
+</b><b>Differentiable Simulation of Light: </b><b>Why it is Important, and What Makes it Hard!</b></h2>
+<p><a href="https://highperformancegraphics.org/slides20/wed_jakob.pdf"><img src="/assets/images/2020/pdf.svg" alt="wed_jakob.pdf" width="20" /> slides</a></p>
+<h3>Abstract</h3>
+<p>Progress on differentiable rendering over the last two years has been remarkable, making these methods a serious contender for solving truly hard inverse problems in computer graphics and beyond. However, a number of key challenges arise that often make differentiable rendering very difficult to use in practice. In this talk, I will give an intuition of what works, what doesn&#8217;t, and what it will take to elevate differentiable rendering to a trusty and efficient component of the practitioner&#8217;s toolbox. I will also showcase a new project fresh from the press that addresses one of the major problems faced by algorithms in this area today.</p>
+<h3>Bio</h3>
+<p>Wenzel Jakob is an assistant professor at EPFL&#8217;s School of Computer and Communication Sciences, and is leading the Realistic Graphics Lab (<a href="https://rgl.epfl.ch/">https://rgl.epfl.ch/</a>). His research interests revolve around inverse graphics, material appearance modeling and physically based rendering algorithms. Wenzel is the recipient of the ACM SIGGRAPH Significant Researcher award and the Eurographics Young Researcher Award. He is also the lead developer of the Mitsuba renderer, a research-oriented rendering system, and one of the authors of the third edition of &#8220;Physically Based Rendering: From Theory To Implementation&#8221;. (<a href="http://pbrt.org/">http://pbrt.org/</a>)</p>
+<h2 id="porting_pbrt_to_the_gpu">Invited talk: Matt Pharr (Distinguished Research Scientist, NVIDIA)<br />
+Porting PBRT to the GPU While Preserving its Soul</h2>
+<p><a href="https://highperformancegraphics.org/slides20/wed_pharr.pdf"><img src="/assets/images/2020/pdf.svg" alt="wed_pharr.pdf" width="20" /> slides</a></p>
+<h3>Abstract</h3>
+<p>The primary goals of PBRT, the ray tracer described in the book *Physically Based Rendering*, are pedagogical: we have tried to demonstrate how to implement a state-of-the-art rendering system from start to finish. There has always been a tension in that goal&#8212;on one hand, we would like to discuss all of the details of making a renderer run at peak performance; on the other, the code must remain clean enough that the algorithms be understandable. Thus, PBRT is multi-threaded, but doesn&#8217;t use CPU SIMD instructions, for example. In this talk I&#8217;ll discuss some recent work in bringing PBRT to the GPU while maintaining its simplicity. The end result is a system with minimal modifications that runs on both CPU and GPU, with substantially higher performance on the latter architecture.</p>
+<h3>Bio</h3>
+<p>Matt Pharr is a Distinguished Research Scientist at NVIDIA where he works on ray-tracing and real-time rendering. He is an author of the book Physically Based Rendering, for which he and the co-authors were awarded a Scientific and Technical Academy Award in 2014 for the book&#8217;s impact on the film industry.</p>
+<h2 id="graphics_system_challenges_for_simulation"><b>Keynote: Manolis Savva (Assistant Professor, Simon Fraser University)<br />
+</b><b>3D Graphics System Challenges for Simulation: </b><b>Lessons from AI Habitat</b></h2>
+<p><a href="https://highperformancegraphics.org/slides20/thur_savva.pdf"><img src="/assets/images/2020/pdf.svg" alt="thur_savva.pdf" width="20" /> slides</a></p>
+<h3>Abstract</h3>
+<p>Computer graphics systems are increasingly being used to power 3D simulation infrastructure for developing and evaluating computer vision, robotics, and machine learning methods. The confluence of recent advances in 3D data acquisition and scalable machine learning algorithms has enabled a flourishing of simulation platforms that focus on large-scale learning from realistic 3D environments. These efforts have demonstrated the power of 3D graphics systems to accelerate work in adjacent research areas. At the same time, this use case differs dramatically from interactive systems that produce visuals for human consumption, for which many of the underlying graphics systems were originally designed. This mismatch can lead to inefficiencies and performance bottlenecks which emerge particularly when the 3D graphics producer systems are tightly coupled with machine learning consumer systems. In this talk, I will discuss recent work on the AI Habitat platform, connect it with more general trends in 3D simulation for machine learning and related fields, and finally describe newly emerging challenges for high-performance graphics systems in this domain.</p>
+<h3>Bio</h3>
+<p>Manolis Savva is an Assistant Professor of Computing Science at Simon Fraser University. His research focuses on analysis, organization and generation of 3D content through a human-centric lens of &#8220;common sense&#8221; semantics. The methods that he works on are stepping stones towards holistic 3D scene understanding revolving around people, with applications in computer graphics, computer vision, and robotics. Prior to his current position he was a visiting researcher at Facebook AI Research and a postdoctoral research associate at the Princeton University Computer Graphics and Vision Labs. He received his Ph.D. from Stanford University, under the supervision of Pat Hanrahan. His undergraduate degree was in Physics and Computer Science at Cornell University.</p>
