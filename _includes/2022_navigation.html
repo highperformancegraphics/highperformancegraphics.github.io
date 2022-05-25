@@ -6,20 +6,23 @@
         {% unless page.url == "/2022/" or page.url == "/2022/index.html" or page.url == "/404.html" %}<a href="/2022/"><img src="/assets/images/2022/home.svg" width="24" height="24" alt="HOME" id="home" /></a>
         {% endunless %}
       </li><li>
-        {% if page.url contains "/2022/program" %}<span>PROGRAM</span>{% endif %}
-        {% unless page.url contains "/2022/program" %}<a href="/2022/program/">PROGRAM</a>{% endunless %}
+        {% if page.url contains "/2022/call-for-participation" %}<span>CFP</span>{% endif %}
+        {% unless page.url contains "/2022/call-for-participation" %}<a href="/2022/call-for-participation/">CFP</a>{% endunless %}
       </li><li>
-        {% if page.url contains "/2022/call-for-participation" %}<span>CALL FOR PARTICIPATION</span>{% endif %}
-        {% unless page.url contains "/2022/call-for-participation" %}<a href="/2022/call-for-participation/">CALL FOR PARTICIPATION</a>{% endunless %}
+	<a href="/2022/registration"{% if page.url contains "/2022/program" or page.url contains "/2022/registration" %} class="nav-selected"{% endif %}>ATTEND</a>
+	<ul>
+	  <li><a href="/2022/registration">REGISTRATION</a></li>
+	  <li><a href="/2022/program">PROGRAM</a></li>
+	</ul>
       </li><li>
-        {% if page.url contains "/2022/registration" %}<span>REGISTRATION</span>{% endif %}
-        {% unless page.url contains "/2022/registration" %}<a href="/2022/registration/">REGISTRATION</a>{% endunless %}
+        {% if page.url contains "/2022/reception" %}<span>IN-PERSON RECEPTION &amp; KEYNOTE</span>{% endif %}
+        {% unless page.url contains "/2022/reception" %}<a href="/2022/reception/">IN-PERSON RECEPTION &amp; KEYNOTE</a>{% endunless %}
       </li><li>
         {% if page.url contains "/2022/diversity-inclusion-program" %}<span>DIVERSITY &amp; INCLUSION</span>{% endif %}
         {% unless page.url contains "/2022/diversity-inclusion-program" %}<a href="/2022/diversity-inclusion-program/">DIVERSITY &amp; INCLUSION</a>{% endunless %}
       </li><li>
-        {% if page.url contains "/2022/student-competition" %}<span>STUDENT COMPETITION</span>{% endif %}
-        {% unless page.url contains "/2022/student-competition" %}<a href="/2022/student-competition/">STUDENT COMPETITION</a>{% endunless %}
+        {% if page.url contains "/2022/student-competition" %}<span>STUDENT AWARD</span>{% endif %}
+        {% unless page.url contains "/2022/student-competition" %}<a href="/2022/student-competition/">STUDENT AWARD</a>{% endunless %}
       </li><li>
         {% if page.url contains "/2022/organization" or page.url contains "/2022/steering-committee" or page.url contains "/2022/web-archive" or page.url contains "/2022/support-the-conference" or page.url contains "/2022/contact-us" %}<span>ORGANIZATION</span>{% endif %}
         {% unless page.url contains "/2022/organization" or page.url contains "/2022/steering-committee" or page.url contains "/2022/web-archive" or page.url contains "/2022/support-the-conference" or page.url contains "/2022/contact-us" %}<a href="/2022/organization/">ORGANIZATION</a>{% endunless %}   
