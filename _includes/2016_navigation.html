@@ -1,0 +1,47 @@
+<div id="navigation-menu-bar">
+  <nav>
+    <ul>
+      <li>
+        {% if page.url == "/2016/" or page.url == "/2016/index.html" %}<span><img src="/assets/images/2016/home.svg" width="24" height="24" alt="HOME" id="home" /></span>{% endif %}
+        {% unless page.url == "/2016/" or page.url == "/2016/index.html" %}<a href="/2016/"><img src="/assets/images/2016/home.svg" width="24" height="24" alt="HOME" id="home" /></a>
+        {% endunless %}
+      </li><li>
+        {% if page.url contains "/2016/cfp" %}<span>CFP</span>{% endif %}
+        {% unless page.url contains "/2016/cfp" %}<a href="/2016/cfp/">CFP</a>{% endunless %}
+      </li><li>
+	<a href="/2016/program/"{% if page.url contains "/2016/program" or page.url contains "/2016/best-paper" %} class="nav-selected"{% endif %}>PROGRAM</a>
+	<ul>
+	  <li><a href="/2016/best-paper/">BEST PAPER</a></li>
+	</ul>
+      </li><li>
+        {% if page.url contains "/2016/registration" %}<span>REGISTRATION</span>{% endif %}
+        {% unless page.url contains "/2016/registration" %}<a href="/2016/registration/">REGISTRATION</a>{% endunless %}
+      </li><li>
+        {% if page.url contains "/2016/accommodation" %}<span>ACCOMMODATION</span>{% endif %}
+        {% unless page.url contains "/2016/accommodation" %}<a href="/2016/accommodation/">ACCOMMODATION</a>{% endunless %}
+      </li><li>
+        {% if page.url contains "/2016/venue" %}<span>VENUE</span>{% endif %}
+        {% unless page.url contains "/2016/venue" %}<a href="/2016/venue/">VENUE</a>{% endunless %}
+      </li><li>
+        {% if page.url contains "/2016/submissions" %}<span>SUBMISSIONS</span>{% endif %}
+        {% unless page.url contains "/2016/submissions" %}<a href="/2016/submissions/">SUBMISSIONS</a>{% endunless %}
+      </li><li>
+	<a href="/2016/organization/"{% if page.url contains "/2016/organization" or page.url contains "/2016/web-archive" or page.url contains "/2016/support" or page.url contains "/2016/contact-us" %} class="nav-selected"{% endif %}>ORGANIZATION</a>
+        <ul>
+          <li><a href="/2016/support/">SUPPORT</a></li>
+          <li><a href="/2016/web-archive/">WEB ARCHIVE</a></li>
+          <li><a href="/2016/contact-us/">CONTACT US</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+<script>
+  function toggleNavigationVisibility() {
+      let navMenu = document.getElementById("navigation-menu-bar").children[0].children[0];
+      for (let i = 0; i < navMenu.children.length; i++) {
+          navMenu.children[i].classList.toggle("display-whole-navigation-menu");
+      }
+  }
+  document.getElementById("navigation-menu-bar").addEventListener("click", toggleNavigationVisibility, false);
+</script>

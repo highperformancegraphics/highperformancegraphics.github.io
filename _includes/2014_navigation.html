@@ -1,0 +1,46 @@
+<div id="navigation-menu-bar">
+  <nav>
+    <ul>
+      <li>
+        {% if page.url == "/2014/" or page.url == "/2014/index.html" %}<span>Home</span>{% endif %}
+        {% unless page.url == "/2014/" or page.url == "/2014/index.html" %}<a href="/2014/">Home</a>
+        {% endunless %}
+      </li><li>
+        {% if page.url contains "/2014/cfp" %}<span>CFP</span>{% endif %}
+        {% unless page.url contains "/2014/cfp" %}<a href="/2014/cfp/">CFP</a>{% endunless %}
+      </li><li>
+	<a href="/2014/program/"{% if page.url contains "/2014/program" or page.url contains "/2014/best-paper" %} class="nav-selected"{% endif %}>Program</a>
+	<ul>
+	  <li><a href="/2014/best-paper/">Best Paper</a></li>
+	</ul>
+      </li><li>
+        {% if page.url contains "/2014/registration" %}<span>Registration</span>{% endif %}
+        {% unless page.url contains "/2014/registration" %}<a href="/2014/registration/">Registration</a>{% endunless %}
+      </li><li>
+        {% if page.url contains "/2014/accommodations" %}<span>Accommodations</span>{% endif %}
+        {% unless page.url contains "/2014/accommodations" %}<a href="/2014/accommodations/">Accommodations</a>{% endunless %}
+      </li><li>
+        {% if page.url contains "/2014/venue" %}<span>Venue</span>{% endif %}
+        {% unless page.url contains "/2014/venue" %}<a href="/2014/venue/">Venue</a>{% endunless %}
+      </li><li>
+        {% if page.url contains "/2014/submissions" %}<span>Submissions</span>{% endif %}
+        {% unless page.url contains "/2014/submissions" %}<a href="/2014/submissions/">Submissions</a>{% endunless %}
+      </li><li>
+	<a href="/2014/organization/"{% if page.url contains "/2014/organization" or page.url contains "/2014/web-archive" or page.url contains "/2014/support" %} class="nav-selected"{% endif %}>Organization</a>
+        <ul>
+          <li><a href="/2014/web-archive/">Web Archive</a></li>
+          <li><a href="/2014/support/">Support</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+<script>
+  function toggleNavigationVisibility() {
+      let navMenu = document.getElementById("navigation-menu-bar").children[0].children[0];
+      for (let i = 0; i < navMenu.children.length; i++) {
+          navMenu.children[i].classList.toggle("display-whole-navigation-menu");
+      }
+  }
+  document.getElementById("navigation-menu-bar").addEventListener("click", toggleNavigationVisibility, false);
+</script>

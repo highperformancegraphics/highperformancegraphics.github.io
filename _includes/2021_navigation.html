@@ -6,14 +6,12 @@
         {% unless page.url == "/2021/" or page.url == "/2021/index.html" %}<a href="/2021/"><img src="/assets/images/2021/home.svg" width="24" height="24" alt="HOME" id="home" /></a>
         {% endunless %}
       </li><li>
-        {% if page.url contains "/2021/program" or page.url contains "/2021/best-paper" %}<span>PROGRAM</span>{% endif %}
-        {% unless page.url contains "/2021/program" or page.url contains "/2021/best-paper" %}<a href="/2021/program/">PROGRAM</a>{% endunless %}
+	<a href="/2021/program/"{% if page.url contains "/2021/program" or page.url contains "/2021/best-paper" %} class="nav-selected"{% endif %}>PROGRAM</a>
 	<ul>
 	  <li><a href="/2021/best-paper/">BEST PAPER</a></li>
 	</ul>
       </li><li>
-        {% if page.url contains "/2021/call-for-participation" or page.url contains "/2021/experimental-virtual-sessions" %}<span>CALL FOR PARTICIPATION</span>{% endif %}
-        {% unless page.url contains "/2021/call-for-participation" or page.url contains "/2021/experimental-virtual-sessions" %}<a href="/2021/call-for-participation/">CALL FOR PARTICIPATION</a>{% endunless %}
+	<a href="/2021/call-for-participation/"{% if page.url contains "/2021/call-for-participation" or page.url contains "/2021/experimental-virtual-sessions" %} class="nav-selected"{% endif %}>CALL FOR PARTICIPATION</a>
 	<ul>
 	  <li><a href="/2021/experimental-virtual-sessions/">VIRTUAL SESSIONS</a></li>
 	</ul>
@@ -21,11 +19,9 @@
         {% if page.url contains "/2021/registration" %}<span>REGISTRATION</span>{% endif %}
         {% unless page.url contains "/2021/registration" %}<a href="/2021/registration/">REGISTRATION</a>{% endunless %}
       </li><li>
-        {% if page.url contains "/2021/diversity-inclusion-program" or page.url contains "/2021/diversity-inclusion-program-application" %}<span>DIVERSITY &amp; INCLUSION</span>{% endif %}
-        {% unless page.url contains "/2021/diversity-inclusion-program" or page.url contains "/2021/diversity-inclusion-program-application" %}<a href="/2021/diversity-inclusion-program/">DIVERSITY &amp; INCLUSION</a>{% endunless %}
+	<a href="/2021/diversity-inclusion-program/"{% if page.url contains "/2021/diversity-inclusion-program" or page.url contains "/2021/diversity-inclusion-program-application" %} class="nav-selected"{% endif %}>DIVERSITY &amp; INCLUSION</a>
 	<ul>
-	  <li><a href="/2021/diversity-inclusion-program/">DIVERSITY &amp; INCLUSION PROGRAM</a></li>
-	  <li><a href="/2021/diversity-inclusion-program-application/">APPLICATION</a></li>
+	  <li><a href="/2021/diversity-inclusion-program-application/">DIVERSITY &amp; INCLUSION PROGRAM APPLICATION</a></li>
 	</ul>
       </li><li>
         {% if page.url contains "/2021/student-competition" %}<span>STUDENT COMPETITION</span>{% endif %}

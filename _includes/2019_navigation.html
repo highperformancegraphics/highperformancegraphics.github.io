@@ -1,0 +1,51 @@
+<div id="navigation-menu-bar">
+  <nav>
+    <ul>
+      <li>
+        {% if page.url == "/2019/" or page.url == "/2019/index.html" %}<span><img src="/assets/images/2019/home.svg" width="24" height="24" alt="HOME" id="home" /></span>{% endif %}
+        {% unless page.url == "/2019/" or page.url == "/2019/index.html" %}<a href="/2019/"><img src="/assets/images/2019/home.svg" width="24" height="24" alt="HOME" id="home" /></a>
+        {% endunless %}
+      </li><li>
+        {% if page.url contains "/2019/call-for-participation" %}<span>CFP</span>{% endif %}
+        {% unless page.url contains "/2019/call-for-participation" %}<a href="/2019/call-for-participation/">CFP</a>{% endunless %}
+      </li><li>
+	<a href="/2019/program/"{% if page.url contains "/2019/program" or page.url contains "/2019/best-paper" %} class="nav-selected"{% endif %}>PROGRAM</a>
+	<ul>
+	  <li><a href="/2019/best-paper/">BEST PAPER</a></li>
+	</ul>
+      </li><li>
+        {% if page.url contains "/2019/registration" %}<span>REGISTRATION</span>{% endif %}
+        {% unless page.url contains "/2019/registration" %}<a href="/2019/registration/">REGISTRATION</a>{% endunless %}
+      </li><li>
+        {% if page.url contains "/2019/accommodations" %}<span>ACCOMMODATIONS</span>{% endif %}
+        {% unless page.url contains "/2019/accommodations" %}<a href="/2019/accommodations/">ACCOMMODATIONS</a>{% endunless %}
+      </li><li>
+        {% if page.url contains "/2019/venue" %}<span>VENUE</span>{% endif %}
+        {% unless page.url contains "/2019/venue" %}<a href="/2019/venue/">VENUE</a>{% endunless %}
+      </li><li>
+        {% if page.url contains "/2019/submissions" %}<span>SUBMISSIONS</span>{% endif %}
+        {% unless page.url contains "/2019/submissions" %}<a href="/2019/submissions/">SUBMISSIONS</a>{% endunless %}
+      </li><li>
+	<a href="/2019/organization/"{% if page.url contains "/2019/organization" or page.url contains "/2019/steering-committee" or page.url contains "/2019/web-archive" or page.url contains "/2019/support-the-conference" or page.url contains "/2019/contact-us" %} class="nav-selected"{% endif %}>ORGANIZATION</a>
+        <ul>
+          <li><a href="/2019/steering-committee/">STEERING COMMITTEE</a></li>
+          <li><a href="/2019/web-archive/">WEB ARCHIVE</a></li>
+          <li><a href="/2019/support/">SUPPORT</a></li>
+          <li><a href="/2019/contact-us/">CONTACT US</a></li>
+        </ul>
+      </li><li>
+        {% if page.url contains "/2019/diversity" %}<span>DIVERSITY SCHOLARSHIP</span>{% endif %}
+        {% unless page.url contains "/2019/diversity" %}<a href="/2019/diversity/">DIVERSITY SCHOLARSHIP</a>{% endunless %}
+      </li>
+    </ul>
+  </nav>
+</div>
+<script>
+  function toggleNavigationVisibility() {
+      let navMenu = document.getElementById("navigation-menu-bar").children[0].children[0];
+      for (let i = 0; i < navMenu.children.length; i++) {
+          navMenu.children[i].classList.toggle("display-whole-navigation-menu");
+      }
+  }
+  document.getElementById("navigation-menu-bar").addEventListener("click", toggleNavigationVisibility, false);
+</script>

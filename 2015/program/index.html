@@ -1,0 +1,382 @@
+---
+layout: 2015
+title: High Performance Graphics 2015 &#8211; Program
+description: High Performance Graphics 2015 Program
+keywords: conference, program, graphics, performance, ray-tracing, raytracing, GPU
+---
+<h1>Full Program</h1>
+<p>High-Performance Graphics 2015 will be held in Los Angeles, California in the <a href="https://www.omnihotels.com/hotels/los-angeles-california-plaza/meetings/floor-plans">Bunkerhill / Museum</a> room at the <a href="https://www.omnihotels.com/hotels/los-angeles-california-plaza">Omni Los Angeles Hotel at California Plaza</a>.</p>
+<style>
+    table#tblprog tr:nth-child(odd)  { background-color:#F2D0A4; }
+    table#tblprog tr:nth-child(even) { background-color:#F7F5E7; }
+    table#tblprog tr:nth-child(odd)  td { vertical-align: top; padding-top: 0px; padding-bottom: 0px; line-height: normal; padding: 5px 5px 5px  5px; font-weight: bold;}
+    table#tblprog tr:nth-child(even) td { vertical-align: top; padding-top: 0px; padding-bottom: 0px; line-height: normal; padding: 5px 5px 20px 5px;}
+    h4 {padding-top: 2px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 5px;}
+    #main-content ul {padding-top: 5px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;}
+    #main-content li {padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 5px;}
+    p#pabs { line-height: normal; font-size: 97%; font-style: italic; padding-bottom: 7px; padding-top: 5px; margin: 0px; text-align: justify;}
+    p { line-height: normal; padding-bottom: 0px; margin-bottom: 0px;}
+    /*div#tbldiv { border: 2px solid #F7F5E7; padding: 2px;}*/
+    h2#daytitle {display: block; border-bottom: 5px solid #c94812; padding: 25px 0px 10px 5px; margin: auto; font-size: 275%; font-weight: normal; text-align: center;}
+</style>
+<h2 id="daytitle">Friday, August 7</h2>
+<div id="tbldiv">
+<table id="tblprog" width="100%">
+<colgroup>
+<col style="width: 100%;" /> </colgroup>
+<tbody>
+<tr>
+<td>9:30 AM to 10:30 AM</td>
+</tr>
+<tr>
+<td>
+<h4>Registration</h4>
+</td>
+</tr>
+<tr>
+<td>10:30 AM to 10:45 AM</td>
+</tr>
+<tr>
+<td>
+<h4>Opening Remarks</h4>
+</td>
+</tr>
+<tr>
+<td>10:45 AM to 12:00 PM</td>
+</tr>
+<tr>
+<td>
+<h4>Papers Session 1: Efficient Ray Tracing</h4>
+<ul>
+<li><b>Efficient Ray Tracing of Subdivision Surfaces using Tessellation Caching</b><br />
+  Carsten Benthin, Sven Woop, Matthias Nießner, Kai Selgrad, and Ingo Wald<br />
+  <a href="/wp-content/uploads/2015/Papers-Session1/EfficientRayTracingOfSubdivisionSurfacesUsingTessellationCaching.pptx">slides</a></li>
+<li><b>Bounding Volume Hierarchy Optimization through Agglomerative Treelet Restructuring</b><br />
+  Leonardo R. Domingues and Helio Pedrini<br />
+  <a href="/wp-content/uploads/2015/Papers-Session1/apresentacao.pdf">slides</a></li>
+<li><b>Reorder Buffer: An Energy-Efficient Multithreading Architecture for Hardware MIMD Ray Traversal</b><br />
+  Won-Jong Lee, Youngsam Shin, Seok Joong Hwang, Seok Kang, Jeong-Joon Yoo, and Soojung Ryu<br />
+  <a href="/wp-content/uploads/2015/Papers-Session1/ReorderBuffer.pdf">slides</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>12:00 PM to 01:30 PM</td>
+</tr>
+<tr>
+<td>
+<h4>Lunch</h4>
+<p id="pabs">Provided by HPG at the Omni Hotel</p>
+</td>
+</tr>
+<tr>
+<td>1:30 PM to 02:45 PM</td>
+</tr>
+<tr>
+<td>
+<h4>Papers Session 2: Future Graphics Pipelines</h4>
+<ul>
+<li><b>Decoupled Coverage Anti-Aliasing</b><br />
+  Yuxiang Wang, Chris Wyman, Yong He, and Pradeep Sen<br />
+  <a href="/wp-content/uploads/2015/Papers-Session2/DCAA_slides.pptx">slides</a></li>
+<li><b>Deferred Attribute Interpolation for Memory-Efficient Deferred Shading</b><br />
+  Christoph Schied and Carsten Dachsbacher<br />
+  <a href="/wp-content/uploads/2015/Papers-Session2/DAIS.ppt">slides</a></li>
+<li><b>An Incremental Rendering VM</b><br />
+  Georg Haaser, Harald Steinlechner, Stefan Maierhofer, and Robert F. Tobler<br />
+  <a href="/wp-content/uploads/2015/Papers-Session2/An_Incremental_Rendering_VM.pdf">slides</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>2:45 PM to 03:15 PM</td>
+</tr>
+<tr>
+<td>
+<h4>Afternoon Break</h4>
+</td>
+</tr>
+<tr>
+<td>3:15 PM to 04:15 PM</td>
+</tr>
+<tr>
+<td>
+<h4>Hot3D Session 1</h4>
+<div>
+<h4>&#8220;Walt Disney Animation Studio&#8217;s Hyperion Renderer: Engineering global Illumination Coherence at a Production Scale&#8221;</h4>
+<p>Andrew Selle, Disney Studios</p>
+<p id="pabs">The film industry continues to move to path traced global illumination in order to produce increasingly sophisticated imagery. While the generality and completeness of the path tracing is attractive, its need to randomly sample all objects in the scene with rays leads to incoherent memory accesses that restrict the complexity of scenes that can be rendered.  Our Hyperion renderer employs a new ray batch streaming architecture that overcomes these limitations.  In this talk we will discuss the development of our renderer and describe our engineering challenges and solutions as they relate to modern high-performance computing.  This includes details like wait-free algorithms and work queues that scale to many cores, effective use of local SSDs, and integrated performance tracking and diagnostics.  We will also more broadly describe our philosophy of managing complexity through simplicity and discuss challenges in deployment and adoption.  In particular, we will discuss how assumptions about data granularity and uniformity can inadvertently inhibit performance and how we aim to avoid this pitfall going forward.</p>
+</div>
+<div>
+<h4>&#8220;There&#8217;s No Business Like Show Business: Projection Mapping at Scale&#8221;</h4>
+<p>Ash Nehru, D3 Technologies</p>
+<p id="pabs">This talk will provide a look at the particular challenges of texture-mapping reality for live performance, from driving 80 HD projectors for the Super Bowl Halftime show to rendering onto the Hoover Dam. It will discuss modeling, visualization, large-canvas video playback, distribution, synchronization, fault tolerance, projector simulation, long-distance transmission, moving object tracking, dynamic blending, optical calibration, staying up for days, and what this might mean for the future of GPUs.</p>
+<p><a href="/wp-content/uploads/2015/Hot3D1/d3_hpgg.pdf">slides</a></div>
+</td>
+</tr>
+<tr>
+<td>4:15 PM to 04:45 PM</td>
+</tr>
+<tr>
+<td>
+<h4>Afternoon Break</h4>
+</td>
+</tr>
+<tr>
+<td>4:45 PM to 06:00 PM</td>
+</tr>
+<tr>
+<td>
+<h4>Poster &#8220;Quick Talks&#8221;</h4>
+<ul>
+<li><b>MSAA-Based Coarse Shading for Power-Efficient Rendering on High Pixel-Density Displays</b><br />
+  Pavlos Mavridis and Georgios Papaioannou<br />
+  <a href="/wp-content/uploads/2015/PosterAbstracts/msaa-based-coarse-shading.pdf">abstract</a> |  <a href="/wp-content/uploads/2015/PosterQuickTalks/HPG2015_coarse_shading_final.pptx">slides</a></li>
+<li><b>Compat-Map For Real-time Texture Synthesis and Rendering</b><br />
+  Linling Zhang and Simon Fenney<br />
+  <a href="/wp-content/uploads/2015/PosterAbstracts/compat-map-for-texture-synthesis.pdf">abstract</a> |  <a href="/wp-content/uploads/2015/PosterQuickTalks/Compat-Map_For_Real-time_Texture_Synthesis_And_Rendering.pdf">slides</a></li>
+<li><b>An Evaluation of Existing BVH Traversal Algorithms for Efficient Multi-Hit Ray Tracing</b><br />
+  Jefferson Amstutz, Johannes Günther, Ingo Wald, and Christiaan Gribble<br />
+  <a href="/wp-content/uploads/2015/PosterAbstracts/evaluation-existing-bvh-traversal.pdf">abstract</a> |  <a href="/wp-content/uploads/2015/PosterQuickTalks/mh_hpg_15.pptx">slides</a></li>
+<li><b>SVGPU: Real Time 3D Rendering to Vector Graphics Formats</b><br />
+  Apollo I. Ellis, Warren Hunt, and John C. Hart<br />
+  <a href="/wp-content/uploads/2015/PosterAbstracts/svgpu-3d-rendering-to-vector-graphics.pdf">abstract</a> |  <a href="/wp-content/uploads/2015/PosterQuickTalks/svgpu_slides.pdf">slides</a></li>
+<li><b>Framebuffer Compression Using Dynamic Color Palettes</b><br />
+  Ayub Gubran and Tor M. Aamodt<br />
+  <a href="/wp-content/uploads/2015/PosterAbstracts/framebuffer-compression-dynamic.pdf">abstract</a> |  <a href="/wp-content/uploads/2015/PosterQuickTalks/DCP_HPG2015.pptx">slides</a> | <a href="/wp-content/uploads/2015/PosterQuickTalks/DCP_Poster.pdf">poster</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="daytitle">Saturday, August 8</h2>
+<div id="tbldiv">
+<table id="tblprog" width="100%">
+<colgroup>
+<col style="width: 100%;" /> </colgroup>
+<tbody>
+<tr>
+<td>9:00 AM to 10:00 AM</td>
+</tr>
+<tr>
+<td>
+<h4>Keynote 1</h4>
+<h4>&#8220;Virtual Reality: The Next Great Graphics Revolution&#8221;</h4>
+<p>Warren Hunt, Oculus Research</p>
+<p id="pabs">Rapid changes in high-resolution display technology, use of optical systems, low-latency head and eye tracking, and the goal of driving the human perceptual system present a host of exciting new challenges that far exceed the limits of today&#8217;s best real-time graphics and rendering systems, and simply &#8220;scaling up&#8221; the designs we have today will likely not get us to where we want to go.  This makes VR is a very exciting (and still very open) field for graphics systems research.  In this talk I&#8217;ll discuss the myriad of technologies that will need to come together in the next decade to achieve a highly compelling virtual reality experience, as well as discuss what new forms of applications might be possible if we are able to achieve this goal.</p>
+<p><a href="/wp-content/uploads/2015/Keynote1/WarrenHuntHPGKeynote.pptx">slides</a></td>
+</tr>
+<tr>
+<td>10:00 AM to 10:30 AM</td>
+</tr>
+<tr>
+<td>
+<h4>Morning Break</h4>
+</td>
+</tr>
+<tr>
+<td>10:30 AM to 11:45 AM</td>
+</tr>
+<tr>
+<td>
+<h4>Papers Session 3: Rendering and Display</h4>
+<ul>
+<li><b>Perception of Highlight Disparity at a Distance in Consumer Head-Mounted Displays</b><br />
+  Robert Toth, Jon Hasselgren, and Tomas Akenine-Möller<br />
+  <a href="/wp-content/uploads/2015/Papers-Session3/2015-hpg-vr_study_presentation_pub.pptx">slides</a></li>
+<li><b>An Adaptive Acceleration Structure for Screen-space Ray Tracing</b><br />
+  Sven Widmer, Dawid Pająk, Andre Schulz, Kari Pulli, Jan Kautz, Michael Goesele, and David Luebke<br />
+  <a href="/wp-content/uploads/2015/Papers-Session3/adaptiveAccStruct.pptx">slides</a></li>
+<li><b>Adaptively Layered Statistical Volumetric Obscurance</b><br />
+  Quintjin Hendrickx, Leonardo Scandolo, Martin Eisemann, and Elmar Eisemann<br />
+  <a href="/wp-content/uploads/2015/Papers-Session3/HSEE15.ppt">slides</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>11:45 AM to 12:00 PM</td>
+</tr>
+<tr>
+<td>
+<h4><a href="/wp-content/uploads/2015/Strasser-HPG-2015.pptx">Special Presentation: Remembering Wolfgang Straßer</a></h4>
+</td>
+</tr>
+<tr>
+<td>12:00 PM to 01:15 PM</td>
+</tr>
+<tr>
+<td>
+<h4>Lunch</h4>
+<p id="pabs">Provided by HPG at the Omni Hotel</p>
+</td>
+</tr>
+<tr>
+<td>1:15 PM to 02:45 PM</td>
+</tr>
+<tr>
+<td>
+<h4>Hot3D Session 2</h4>
+<ul>
+<li><b>Memory Sharing in the Compute Architecture of Intel Processor Graphics</b><br />
+Stephen Junkins, Intel</p>
+<p id="pabs">The Intel(r) Processor Graphics architecture is used in products such Intel(r) HD Graphics and Intel(r) Iris(tm) Pro Graphics.   It is a GPU architecture well suited for power and performance optimized compute applications implemented through APIs like OpenCL*, Renderscript, and Microsoft* DirectX* Compute Shader.  We briefly describe the building block architecture components and their companion memory hierarchy. We then explain the architecture&#8217;s coherent memory sharing capabilities and how it enables shared virtual memory compute applications.</p>
+<p><a href="/wp-content/uploads/2015/Hot3D2/Compute_Architecture_of_Intel_Processor_Graphics_Gen8_HPGHot3D2015.pdf">slides</a> | <a href="https://software.intel.com/en-us/articles/intel-graphics-developers-guides">white papers and other information</a></li>
+<li><b>Tegra X1 Architecture and Shield Android TV</b><br />
+  Steven Molnar, NVIDIA<br />
+  <a href="/wp-content/uploads/2015/Hot3D2/NVIDIA_X1_hpg2015_hot3d.pdf">slides</a></li>
+<li><b>NVIDIA Grid and PC Game Streaming</b><br />
+  Roger Allen, NVIDIA<br />
+  <a href="/wp-content/uploads/2015/Hot3D2/HPG2015_NVIDIA_GAMESTREAM.pptx">slides</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>2:45 PM to 03:45 PM</td>
+</tr>
+<tr>
+<td>
+<h4>Afternoon Break and Poster/Demo Session</h4>
+</td>
+</tr>
+<tr>
+<td>3:45 PM to 05:00 PM</td>
+</tr>
+<tr>
+<td>
+<h4>Panel Discussion: What does Virtual Reality mean for the future of entertainment?</h4>
+<p>Moderator: Matt Pharr, Google</p>
+<ul>
+<li>Rob Bredow, Industrial Light and Magic</li>
+<li>David Gallup, Google</li>
+<li>Warren Hunt, Oculus Research</li>
+<li>David Luebke, NVIDIA Research</li>
+<li>Jeremy Selan, Valve</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>6:30 PM to 9:30 PM</td>
+</tr>
+<tr>
+<td>
+<h4>HPG Banquet at <a href="http://www.globaldiningca.com/laboheme/">La Boheme</a></h4>
+<p>8400 Santa Monica Blvd., West Hollywood, CA 90069</p>
+<p id="pabs">Buses will be available for transport to and from the venue.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="daytitle">Sunday, August 9</h2>
+<div id="tbldiv">
+<table id="tblprog" width="100%">
+<colgroup>
+<col style="width: 100%;" /> </colgroup>
+<tbody>
+<tr>
+<td>9:00 AM to 10:00 AM</td>
+</tr>
+<tr>
+<td>
+<h4>Keynote 2</h4>
+<h4>&#8220;Programmable Automotive Headlights: High-Performance Lighting and Imaging at 100 Kilometers Per Hour&#8221;</h4>
+<p>Srinivas Narasimhan, Carnegie Mellon University</p>
+<p id="pabs">The primary goal of a vehicular headlight is to improve safety in low-light and poor weather conditions. The typical headlight however has very limited flexibility&#8212;switching between high and low beams, turning off beams toward the opposing lane or rotating the beam as the vehicle turns &#8211; and is not designed for all driving environments. Thus, despite decades of innovation in light source technology, more than half of the vehicular accidents still happen at night even with much less traffic on the road. </p>
+<p id="pabs">
+In this talk, I will describe a new design for a headlight that can be programmed to perform several tasks simultaneously and that can sense, react and adapt quickly to any environment with the goal of increasing safety for all drivers on the road. For example, we will be able to drive with high-beams without glaring any other driver and we will be able to see better during rain and snowstorms when the road is most treacherous to drive. The headlights can also increase contrast of lanes, markings and sidewalks and can alert drivers to suddenly appearing obstacles. I will lay out the engineering challenges in building this headlight as a high-throughput, low-latency platform for computational imaging and lighting and share our experiences with the prototypes we developed over the past two years.</p>
+</td>
+</tr>
+<tr>
+<td>10:00 AM to 10:30 AM</td>
+</tr>
+<tr>
+<td>
+<h4>Morning Break</h4>
+</td>
+</tr>
+<tr>
+<td>10:30 AM to 11:45 AM</td>
+</tr>
+<tr>
+<td>
+<h4>Papers Session 4: High-Performance Data Processing</h4>
+<ul>
+<li><b>Compiling High Performance Recursive Filters</b><br />
+  Gaurav Chaurasia, Jonathan Ragan-Kelley, Sylvain Paris, George Drettakis, and Fredo Durand<br />
+  <a href="/wp-content/uploads/2015/Papers-Session4/RecFilter_Chaurasia2015_HPG.pdf">slides</a></li>
+<li><b>Grid-Free Out-Of-Core Voxelization to Sparse Voxel Octrees on GPU</b><br />
+  Martin Pätzold and Andreas Kolb<br />
+  <a href="/wp-content/uploads/2015/Papers-Session4/grid_free_out_of_core_voxelization.pdf">slides</a></li>
+<li><b>Morton Integrals for High Speed Geometry Simplification</b><br />
+  Hélène Legrand and Tamy Boubekeur<br />
+  <a href="/wp-content/uploads/2015/Papers-Session4/HSGS.ppsx">slides</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>11:45 AM to 01:15 PM</td>
+</tr>
+<tr>
+<td>
+<h4>Lunch and HPG Town Hall</h4>
+<p id="pabs">Lunch is not provided by HPG on Sunday</p>
+</td>
+</tr>
+<tr>
+<td>1:15 PM to 02:15 PM</td>
+</tr>
+<tr>
+<td>
+<h4>Inaugural Hot2D Session</h4>
+<div>
+<h4>&#8220;Interactive viewing of Lytro&#8217;s living pictures&#8221;</h4>
+<p>Kurt Akeley, Lytro, Inc.</p>
+<p id="pabs">Light field cameras such as the Lytro ILLUM capture scene parallax across the camera&#8217;s entrance pupil, allowing post-capture adjustment of center of perspective, depth of focus, and depth of field. Compressed versions of these light field pictures are animated with GPU-accelerated algorithms, implemented on desktop computers and mobile devices using OpenGL and Direct3D, and in web browsers using WebGL. The talk gives an overview and demonstration of these algorithms, with emphasis on focus effects.</p>
+</div>
+<div>
+<h4>&#8220;A Day in the Life of a Facebook Photo&#8221;</h4>
+<p>Brian Cabral, Director of Engineering, Facebook</p>
+<p id="pabs">Handling hundreds of millions new images a day (and serving several billion photos a day in total) is a daunting distributed systems task — especially in light of the required image resizing and transcoding computations.  This talk will discuss the data flow, architecture, and design decisions we’ve made in building large-scale image processing systems at Facebook, and discuss outstanding challenges and directions.</p>
+<p><a href="/wp-content/uploads/2015/Hot2D/HPG-2015_v3_AB.pdf">slides</a></div>
+</td>
+</tr>
+<tr>
+<td>2:15 PM to 02:30 PM</td>
+</tr>
+<tr>
+<td>
+<h4>Short break</h4>
+</td>
+</tr>
+<tr>
+<td>2:30 PM to 03:40 PM</td>
+</tr>
+<tr>
+<td>
+<h4>Panel: High-Performance Image Processing and Its Future Applications</h4>
+<p>Moderator: Turner Whitted, NVIDIA</p>
+<ul>
+<li>Brian Cabral, Facebook</li>
+<li>Mike Houston, NVIDIA</li>
+<li>Srinivas Narasimhan, CMU</li>
+<li>Jonathan Ragan-Kelley, Stanford</li>
+<li>Pradeep Sen, UC Santa Barbara</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>3:40 PM to 04:00 PM</td>
+</tr>
+<tr>
+<td>
+<h4>Wrap-up</h4>
+<ul>
+<li>Award Presentations
+<li>Wolfgang Straßer Award
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>

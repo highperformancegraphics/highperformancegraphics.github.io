@@ -1,0 +1,47 @@
+<div id="navigation-menu-bar">
+  <nav>
+    <ul>
+      <li>
+        {% if page.url == "/2015/" or page.url == "/2015/index.html" %}<span>Home</span>{% endif %}
+        {% unless page.url == "/2015/" or page.url == "/2015/index.html" %}<a href="/2015/">Home</a>
+        {% endunless %}
+      </li><li>
+	<a href="/2015/program/"{% if page.url contains "/2015/program" or page.url contains "/2015/best-paper" %} class="nav-selected"{% endif %}>Full Program</a>
+	<ul>
+	  <li><a href="/2015/best-paper/">Best Paper</a></li>
+	</ul>
+      </li><li>
+        {% if page.url contains "/2015/cfp" %}<span>CFP</span>{% endif %}
+        {% unless page.url contains "/2015/cfp" %}<a href="/2015/cfp/">CFP</a>{% endunless %}
+      </li><li>
+        {% if page.url contains "/2015/registration" %}<span>Registration</span>{% endif %}
+        {% unless page.url contains "/2015/registration" %}<a href="/2015/registration/">Registration</a>{% endunless %}
+      </li><li>
+        {% if page.url contains "/2015/accommodations" %}<span>Accommodations</span>{% endif %}
+        {% unless page.url contains "/2015/accommodations" %}<a href="/2015/accommodations/">Accommodations</a>{% endunless %}
+      </li><li>
+        {% if page.url contains "/2015/venue" %}<span>Venue</span>{% endif %}
+        {% unless page.url contains "/2015/venue" %}<a href="/2015/venue/">Venue</a>{% endunless %}
+      </li><li>
+        {% if page.url contains "/2015/submissions" %}<span>Submissions</span>{% endif %}
+        {% unless page.url contains "/2015/submissions" %}<a href="/2015/submissions/">Submissions</a>{% endunless %}
+      </li><li>
+	<a href="/2015/organization/"{% if page.url contains "/2015/organization" or page.url contains "/2015/previous-conferences" or page.url contains "/2015/support" or page.url contains "/2015/contact-us" %} class="nav-selected"{% endif %}>Organization</a>
+        <ul>
+          <li><a href="/2015/previous-conferences/">Previous Conferences</a></li>
+          <li><a href="/2015/support/">Support</a></li>
+          <li><a href="/2015/contact-us/">Contact Us</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+<script>
+  function toggleNavigationVisibility() {
+      let navMenu = document.getElementById("navigation-menu-bar").children[0].children[0];
+      for (let i = 0; i < navMenu.children.length; i++) {
+          navMenu.children[i].classList.toggle("display-whole-navigation-menu");
+      }
+  }
+  document.getElementById("navigation-menu-bar").addEventListener("click", toggleNavigationVisibility, false);
+</script>

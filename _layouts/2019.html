@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="{{ page.description }}" />
+    <meta name="keywords" content="{{ page.keywords }}" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap">
+    <link rel="stylesheet" href="/assets/css/2019_styles.css">
+    <link rel="shortcut icon" type="image/png" href="{{ "/assets/images/2019/cropped-cropped-hpg-badge-logo-32x32.png" | absolute_url }}">
+  </head>
+  <body>
+    <div id="scroll-top">^</div>
+    <div id="outer-container">
+      <div id="header-content">
+        <h1 id="site-title"><a href="https://www.highperformancegraphics.org/2019/">High Performance Graphics 2019</a></h1>
+        <h2 id="site-subtitle">Strasbourg | July 8-10, 2019</h2>
+      </div>
+      {% include 2019_navigation.html %}
+      <div id="banner-image"><img src="/assets/images/2019/cropped-strasbourg-2-2.png" width="1500" height="449" alt="High Performance Graphics 2019" /></div>
+      <div id="content-wrapper">
+        <div id="main-content">
+          {{ content }}
+        </div>
+        <aside id="sponsors">
+	  {% include 2019_sponsors.html %}
+        </aside>
+      </div>
+      <div id="footer">
+        <p>Follow us on <a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fwww.highperformancegraphics.org%2F&amp;ref_src=twsrc%5Etfw&amp;region=follow_link&amp;screen_name=HPG_Conf&amp;tw_p=followbutton">Twitter @HPG_Conf</a></p>
+	<p><a href="https://www.highperformancegraphics.org/2022/contact-us/#subscribe">Sign-up for our mailing list</a>!</p>
+	<p>Header image originally by <a href="https://en.wikipedia.org/wiki/File:Strasbourg_-_Ponts_Couverts_vus_de_la_terrasse_panoramique.jpg">Didier B.</a></p>
+      </div>
+    </div>
+    <script>
+      /* All just for the scroll-to-top functionality */
+      var scrollTopOpacity = 0;
+      var scrollTopIntervalTimer;
+      var scrollTopAmount;
+      function fadeScrollTop() {
+          let scrollTopElement = document.getElementById("scroll-top");
+          if (scrollTopAmount < 20) {
+              scrollTopOpacity -= 1/16;
+              if (scrollTopOpacity < 0) { scrollTopOpacity = 0; }
+          } else {
+              scrollTopOpacity += 1/16;
+              if (scrollTopOpacity > 1) { scrollTopOpacity = 1; }
+          }
+          if (scrollTopOpacity == 0) {
+              scrollTopElement.style.display = "none";
+          } else {
+              scrollTopElement.style.display = "block";
+              scrollTopElement.style.opacity = scrollTopOpacity * 0.3;
+          }
+      }
+      function scrollTopTimerFade() {
+          scrollTopAmount = document.documentElement.scrollTop;
+          if (scrollTopAmount < 20 && scrollTopOpacity == 0 ||
+              scrollTopAmount >= 20 && scrollTopOpacity == 1) {
+              window.clearInterval(scrollTopIntervalTimer);
+              window.addEventListener("scroll", scrollListener);
+          } else {
+              fadeScrollTop();
+          }
+      }
+      function scrollListener() {
+          scrollTopAmount = document.documentElement.scrollTop;
+          if ((scrollTopAmount < 20 && scrollTopOpacity == 1) ||
+              (scrollTopAmount >= 20 && scrollTopOpacity == 0)) {
+              window.removeEventListener("scroll", scrollListener);
+              scrollTopIntervalTimer = window.setInterval(scrollTopTimerFade, 38);
+              fadeScrollTop();
+          }
+      }
+      document.getElementById("scroll-top").addEventListener("click",
+        function () { document.documentElement.scrollTop = 0; });
+      window.addEventListener("scroll", scrollListener);
+    </script>
+  </body>
+</html>

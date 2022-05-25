@@ -152,7 +152,7 @@ a {
     display: block;
 }
 
-#navigation-menu-bar ul li span {
+#navigation-menu-bar ul li span, .nav-selected {
     font-weight: bold;
     background-color: #BB5500 !important;
 }
@@ -326,7 +326,8 @@ a {
     #navigation-menu-bar ul li a {
 	display: none;
     }
-    #navigation-menu-bar ul li span {
+    #navigation-menu-bar ul li span, #navigation-menu-bar ul li a.nav-selected {
+	display: block;
     }
     #navigation-menu-bar ul li ul {
 	float: none;
