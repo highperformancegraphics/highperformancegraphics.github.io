@@ -6,6 +6,7 @@ body {
     font-family: Ariel, Helvetica, sans-serif;
     background-color: #CCCCCC;
     line-height: 150%;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
